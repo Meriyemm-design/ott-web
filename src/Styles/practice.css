@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dot {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  border-radius: 50%;
+  background: linear-gradient(to right bottom, lightblue, rgb(143, 223, 225));
+}
+
+button {
+  display: inline-block;
+  padding: 10px 35px;
+  background: linear-gradient(to right bottom, rgb(132, 255, 249), rgb(59, 193, 117));
+  border-radius: 3px;
+  border: none;
+  font-size: 18px;
+  font-weight: medium;
+}

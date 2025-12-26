@@ -1,0 +1,605 @@
+.movie_page {
+}
+
+.movie_page .sv__main_banner {
+  position: relative;
+}
+
+.sv__main_banner .mb__img {
+  position: relative;
+}
+
+.sv__main_banner .mb__content {
+  position: absolute;
+  left: 20vw;
+  bottom: 50px;
+  text-align: center;
+}
+
+.sv__main_banner .mb__content .mb_follow_ups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.sv__main_banner .mb__content .mb_follow_ups .mb_btn {
+}
+
+.sv__main_banner .mb__content .mb_follow_ups .mb_like_btns {
+  display: flex;
+  gap: 10px;
+}
+
+.sv__main_banner .mb__content .mb_follow_ups .mb_like_btns a {
+  background: #0f0f0f;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  padding: 5px 10px;
+  transition: all 0.3s ease-in;
+}
+
+.sv__main_banner .mb__content .mb_follow_ups .mb_like_btns a:hover {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.sv__main_banner .mb__content .mb_follow_ups .mb_like_btns a i {
+  font-size: 21px;
+}
+
+.movie_page .mpage_content {
+}
+
+.movie_page .mpage_content .seasion_sec {
+}
+
+.movie_page .mpage_content .seasion_sec .ss_head {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+.movie_page .mpage_content .seasion_sec .ss_accordions {
+  margin-top: 30px;
+}
+
+.movie_page .ss_accordions .accordion-item {
+  background-color: #141414;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.movie_page .ss_accordions .accordion-button {
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 8px;
+  padding: 30px;
+}
+
+.movie_page .ss_accordions .accordion-button::after {
+  display: none;
+}
+
+.movie_page .ss_accordions .accordion-body {
+  background: #111;
+  border-radius: 16px;
+  color: #aaa;
+}
+
+.movie_page .ss_accordions .ss_numb {
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.movie_page .ss_accordions span {
+  font-size: 1.1vw;
+  color: gray;
+  font-weight: 500;
+}
+
+.movie_page .ss_accordions .acc_icon {
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  background: #141414;
+  border: 1px solid #262626;
+  color: gray;
+  margin-left: auto;
+  padding: 7px;
+  border-radius: 50%;
+  /* transition: all 0.3s ease-in; */
+}
+
+/* .accordion-button[aria-expanded="true"] .acc_icon {
+  transform: rotate(360deg);
+} */
+
+.movie_page .ss_accordions .accordion-button .icon-up {
+  display: none;
+}
+
+.movie_page .ss_accordions .accordion-button .icon-down {
+  display: inline-block;
+}
+
+/* when accordion is expanded */
+.accordion-button[aria-expanded="true"] .acc_icon.icon-up {
+  display: inline-block;
+}
+.accordion-button[aria-expanded="true"] .acc_icon.icon-down {
+  display: none;
+}
+
+.movie_page .ss_accordions .acc_icon i {
+  font-size: 20px;
+}
+
+.movie_page .ss_accordions .episodes_content {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #262626;
+  /* position: relative; */
+}
+
+/* 
+.movie_page .ss_accordions .episodes_content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(229, 0, 0, 0) 0%,
+    rgba(229, 0, 0, 1) 17%,
+    rgba(229, 0, 0, 0) 100%
+  );
+} */
+
+.movie_page .ss_accordions .episodes_content:last-child {
+  border: none;
+}
+
+.movie_page .ss_accordions .episodes_content .epi_num {
+  margin: 0;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.movie_page .ss_accordions .episodes_content .epi_img {
+  position: relative;
+}
+
+.movie_page .ss_accordions .episodes_content .epi_img .d_play {
+  width: 25%;
+  position: absolute;
+  top: 32%;
+  left: 37%;
+}
+
+.movie_page .ss_accordions .e__content_scrollable .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie_page .ss_accordions .e__content_scrollable .details .time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #141414;
+  border: 2px solid #262626;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.movie_page .ss_accordions .e__content_scrollable .details .time h5 {
+  font-size: 1.1vw;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.movie_page .ss_accordions .e__content_scrollable .details h4 {
+  margin-bottom: 0;
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: white;
+}
+
+.movie_page .ss_accordions .e__content_scrollable .epi_details {
+}
+
+.movie_page .ss_accordions .e__content_scrollable .epi_details .epi__desc {
+  margin: 15px 0 0 0;
+}
+
+.desc_heading {
+  color: gray;
+  font-size: 1.15vw;
+  font-weight: 600;
+}
+
+.desc_sub_heading {
+  color: white;
+  font-size: 0.95vw;
+  margin-bottom: 0px;
+}
+
+.mpage_content .ms_epis {
+}
+
+.mpage_content .ms_epis .cast-custom-swiper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+}
+
+.mpage_content .ms_epis .cast-custom-swiper i {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mpage_content .ms_epis .cast-custom-swiper .cast-prev,
+.mpage_content .ms_epis .cast-custom-swiper .cast-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1f1f1f;
+  background-color: #0f0f0f;
+  color: #999999;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-in;
+}
+
+.mpage_content .ms_epis .cast-custom-swiper .cast-prev:hover,
+.mpage_content .ms_epis .cast-custom-swiper .cast-next:hover {
+  background-color: white;
+  color: black;
+}
+
+.mpage_content .ms_epis .cast-custom-swiper .cast-prev {
+}
+
+.mpage_content .ms_epis .cast-custom-swiper .cast-next {
+}
+
+.mpage_content .ms_epis .ms_epis_slider {
+  margin-top: 18px;
+}
+
+.mpage_content .ms_review {
+}
+
+.mpage_content .ms_review .review-custom-swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.mpage_content .ms_review.review-custom-swiper i {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mpage_content .ms_review .review-custom-swiper .cast-prev,
+.mpage_content .ms_review .review-custom-swiper .cast-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1f1f1f;
+  background-color: #0f0f0f;
+  color: #999999;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-in;
+}
+
+.mpage_content .ms_review .review-custom-swiper .cast-prev:hover,
+.mpage_content .ms_review .review-custom-swiper .cast-next:hover {
+  background-color: white;
+  color: black;
+}
+
+.mpage_content .ms_review .review-custom-swiper .cats-pagination {
+  position: inherit;
+  width: fit-content;
+}
+
+.mpage_content .ms_review .review_btn {
+  padding: 12px;
+  background: #141414;
+  border: 2px solid #262626;
+  border-radius: 8px;
+}
+
+.mpage_content .ms_review .review_btn:hover {
+  border: 2px solid #aaa;
+}
+
+.mpage_content .ms_review .review_btn .rv_btn {
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+.mpage_content .ms_review .review_btn .rv_btn i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.mpage_content .ms_review .review_slider {
+  margin-top: 30px;
+}
+
+.mpage_content .ms_review .review_slider .review_slider_items {
+  padding: 30px;
+  background: #0f0f0f;
+  border: 1px solid #262626;
+  border-radius: 12px;
+}
+
+.mpage_content .ms_review .review_slider .review_slider_items .rat_rew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.review_slider .review_slider_items .rat_rew .namings {
+}
+
+.review_slider .review_slider_items .rat_rew .namings .desc_heading {
+  color: white;
+  font-weight: 400;
+  margin: 0;
+}
+
+.review_slider .review_slider_items .rat_rew .namings p {
+  color: gray;
+  margin: 3px 0 0 0;
+}
+
+.review_slider .review_slider_items .rat_rew .ms_epi__rtng {
+  padding: 5px 10px;
+  margin: 0;
+  border-radius: 25px;
+}
+
+.review_slider .review_slider_items .feedback {
+  margin: 20px 0 0 0;
+  color: #999999;
+}
+
+.movie_page .mpage_content .ep_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie_page .mpage_content .ep_info .year {
+}
+
+.movie_page .mpage_content .ep_info .year .ep_heading {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.movie_page .mpage_content .ep_info .year .languages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+/* .movie_page .mpage_content .ep_info .year .languages p {
+  background: #141414;
+  border: 1px solid #262626;
+  border-radius: 6px;
+  align-items: center;
+  padding: 6px 12px;
+} */
+
+.movie_page .mpage_content .ep_info .year .desc_sub_heading {
+  margin: 7px 0 0 0;
+  font-size: 1.12vw;
+  font-weight: 500;
+}
+
+.movie_page .mpage_content .ep_info .year .ep_heading i {
+  font-size: 20px;
+  color: gray;
+}
+
+.movie_page .mpage_content .ep_info .year .ep_heading .desc_heading {
+  margin: 0;
+}
+
+.movie_page .mpage_content .ep_info .year .ms_sub_heading {
+  background: #141414;
+  border: 1px solid #262626;
+  border-radius: 6px;
+  align-items: center;
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: 1.1vw;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.movie_page .mpage_content .ep_info .rat__ings {
+  display: flex;
+  gap: 14px;
+}
+
+.movie_page .mpage_content .ep_info .grey_secbg {
+  background: #141414;
+  border: 2px solid #262626;
+  margin: 6px 0 0 0;
+  padding: 8px 14px;
+}
+
+.ep__ratngs .desc_heading {
+  color: white;
+}
+
+.ep__ratngs .ms_epi__rtng i {
+  color: red;
+  font-size: 18px;
+}
+
+.ep__ratngs .ms_epi__rtng span {
+  color: white;
+}
+
+.movie_page .mpage_content .dir_img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px !important;
+}
+
+.movie_page .mpage_content .dir_img img {
+  width: 20%;
+}
+
+.movie_page .mpage_content .dir_img .country {
+}
+
+.movie_page .mpage_content .dir_img .country .desc_heading {
+  color: white;
+  margin-bottom: 0;
+}
+
+.movie_page .mpage_content .dir_img .country p {
+  color: gray;
+  font-size: 1.05vw;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .sv__main_banner .mb__content {
+    bottom: -15%;
+    left: 32%;
+  }
+
+  .movie_page .sv__main_banner .main_sub_heading {
+    display: none;
+  }
+
+  .sv__main_banner .mb__content .mb_follow_ups {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .movie_page .mpage_content .main-padding {
+    padding: 20px 0 !important;
+  }
+
+  .movie_page .mpage_content .seasion_sec .ss_head {
+    font-size: 18px;
+  }
+
+  .movie_page .mpage_content .seasion_sec .ss_accordions {
+    margin-top: 20px;
+  }
+
+  .movie_page .ss_accordions .accordion-item {
+    margin-bottom: 15px;
+  }
+
+  .movie_page .ss_accordions .accordion-button {
+    padding: 15px;
+  }
+
+  .movie_page .ss_accordions .ss_numb {
+    font-size: 16px;
+  }
+
+  .movie_page .ss_accordions span {
+    font-size: 14px;
+  }
+
+  .movie_page .ss_accordions .episodes_content:last-child {
+    margin-bottom: 0;
+  }
+
+  .movie_page .ss_accordions .episodes_content .epi_num {
+    font-size: 24px;
+  }
+
+  .movie_page .ss_accordions .e__content_scrollable .details {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .movie_page .ss_accordions .e__content_scrollable .details h4 {
+    font-size: 18px;
+  }
+
+  .movie_page .ss_accordions .e__content_scrollable .details .time {
+    gap: 4px;
+  }
+
+  .movie_page .ss_accordions .e__content_scrollable .details .time i {
+    font-size: 16px;
+  }
+
+  .movie_page .ss_accordions .e__content_scrollable .details .time h5 {
+    font-size: 13px;
+  }
+
+  .movie_page .ss_accordions .e__content_scrollable .epi_details .epi__desc {
+    display: none;
+  }
+
+  .desc_heading {
+    font-size: 16px;
+  }
+
+  .desc_sub_heading {
+    font-size: 14px;
+  }
+
+  .mpage_content .ms_review .review_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mpage_content .ms_epis .ms_epis_slider {
+    margin-top: 10px;
+  }
+
+  .mpage_content .ms_review .review_slider {
+    margin-top: 20px;
+  }
+
+  .movie_page .mpage_content .ep_info .rat__ings {
+    margin-top: 10px;
+  }
+
+  .movie_page .mpage_content .ep_info .year .desc_sub_heading,
+  .movie_page .mpage_content .dir_img .country p {
+    font-size: 16px;
+  }
+}

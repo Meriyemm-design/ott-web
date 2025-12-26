@@ -1,0 +1,168 @@
+.plans_section {
+}
+
+.plans_section .plans_text {
+}
+
+.plans_section .plans_text .st_exp_head {
+  font-size: 2.45vw;
+  color: white;
+  font-weight: 600;
+}
+
+.plans_section .plans_text .st_exp_text {
+  margin: 0;
+  padding: 0;
+}
+
+.table_form {
+  display: block;
+}
+
+.tabs_view {
+  display: none;
+}
+
+.pricing-table {
+  margin-top: 50px;
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  overflow: hidden;
+  table-layout: fixed;
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #333;
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.pricing-table td {
+  color: #e9e7e7b3;
+}
+
+.pricing-table th {
+  background: #111;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.popular {
+  background: red;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+
+tr:hover {
+  background: #111;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .table_form {
+    display: none;
+  }
+
+  .tabs_view {
+    display: block;
+  }
+
+  .plans_section .plans_text .st_exp_head {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  /* Tabs Styling */
+  .pricing_tab_btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+    padding: 8px;
+    background: #0f0f0f;
+    border: 1px solid #262626;
+    border-radius: 8px;
+  }
+
+  .pricing_tab_btns .tab_btn {
+    padding: 9px 26px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    color: grey;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .pricing_tab_btns .tab_btn.active {
+    background: #1f1f1f;
+    color: #fff;
+  }
+
+  .pricing_tab_btns .tab_btn:hover {
+    background: #1f1f1f;
+    color: #fff;
+  }
+
+  .popular {
+    display: none;
+  }
+
+  /* Table Styling (same for both) */
+  .pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    border: 1px solid #262626;
+    padding: 12px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .pricing-table th {
+    background: #0f0f0f;
+  }
+
+  .pricing-table .p_plans {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 46px;
+  }
+
+  .pricing-table .pp_info {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 12px 6px 12px;
+  }
+
+  .pricing-table .pp_info h6 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .pricing-table .pp_info h5 {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
